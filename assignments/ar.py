@@ -21,6 +21,7 @@ Future 3D AR Extensions:
 - Implement 3D target positioning with perspective projection
 - Add ARCore/ARKit integration for mobile devices
 - Use SLAM for environment mapping and persistent AR objects
+broadening
 """
 
 import cv2
