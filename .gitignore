@@ -1,0 +1,78 @@
+# Python
+*.py[cod]
+*$py.class
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+./venv/
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Data files (optional - uncomment if you don't want to track large data files)
+# *.csv
+# *.xlsx
+# *.json
+# *.parquet
+# *.h5
+# *.pkl
+# *.pickle
+
+# Model files
+*.h5
+*.pkl
+*.joblib
+*.model
+*.pt
+*.pth
+*.onnx
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
