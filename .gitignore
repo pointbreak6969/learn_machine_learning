@@ -43,14 +43,7 @@ $RECYCLE.BIN/
 # *.pkl
 # *.pickle
 
-# Model files
-*.h5
-*.pkl
-*.joblib
-*.model
-*.pt
-*.pth
-*.onnx
+
 
 # Logs and databases
 *.log
