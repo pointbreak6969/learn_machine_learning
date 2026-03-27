@@ -1,4 +1,6 @@
+# ============================================================================
 # Python
+# ============================================================================
 *.py[cod]
 *$py.class
 __pycache__/
@@ -8,46 +10,113 @@ __pycache__/
 dist/
 build/
 *.whl
-./venv/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+
+# ============================================================================
 # Virtual Environments
+# ============================================================================
 venv/
 env/
 ENV/
 .venv
+env.bak/
+venv.bak/
 .env
+.env.local
+.env.*.local
 
+# ============================================================================
 # Jupyter Notebook
+# ============================================================================
 .ipynb_checkpoints/
-*/.ipynb_checkpoints/*
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# IDEs
+# ============================================================================
+# IDE and Editor Settings
+# ============================================================================
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
 
-# Windows
+# ============================================================================
+# OS Specific Files
+# ============================================================================
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
 
-# Data files (optional - uncomment if you don't want to track large data files)
-# *.csv
-# *.xlsx
-# *.json
-# *.parquet
-# *.h5
-# *.pkl
-# *.pickle
+# ============================================================================
+# Data Files (Large datasets - only track with Git LFS if needed)
+# ============================================================================
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.feather
+data/*/
+**/*.gz
+**/*.zip
 
+# Exclude specific important data files if needed (uncomment to track):
+# !README.md
+# !requirements.txt
 
+# ============================================================================
+# Model Files and Checkpoints (Usually too large for version control)
+# ============================================================================
+*.pth
+*.pt
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.onnx
+checkpoint.pth
+*.weights
+models/
+saved_models/
+**/*.pth
+**/*.pt
 
-# Logs and databases
+# ============================================================================
+# Logs and Databases
+# ============================================================================
 *.log
 *.sql
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# Temporary Files
+# ============================================================================
+*.tmp
+*.bak
+*.swp
+*~
+.cache/
+*.cache
 *.sqlite
 *.db
 
