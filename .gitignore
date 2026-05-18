@@ -12,15 +12,14 @@ build/
 *.whl
 pip-log.txt
 pip-delete-this-directory.txt
-*.egg-info/
 
 # ============================================================================
 # Virtual Environments
 # ============================================================================
+.venv/
 venv/
 env/
 ENV/
-.venv
 env.bak/
 venv.bak/
 .env
@@ -30,8 +29,6 @@ venv.bak/
 # ============================================================================
 # Jupyter Notebook
 # ============================================================================
-.ipynb_checkpoints/
-*/.ipynb_checkpoints/
 **/.ipynb_checkpoints/
 *.ipynb_checkpoints
 
@@ -43,7 +40,6 @@ venv.bak/
 *.swp
 *.swo
 *~
-.DS_Store
 .project
 .pydevproject
 .settings/
@@ -53,88 +49,112 @@ venv.bak/
 # ============================================================================
 # OS Specific Files
 # ============================================================================
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-.AppleDouble
-.LSOverride
-.Spotlight-V100
-.Trashes
-
-# ============================================================================
-# Data Files (Large datasets - only track with Git LFS if needed)
-# ============================================================================
-*.csv
-*.xlsx
-*.xls
-*.json
-*.parquet
-*.h5
-*.hdf5
-*.pkl
-*.pickle
-*.feather
-data/*/
-**/*.gz
-**/*.zip
-
-# Exclude specific important data files if needed (uncomment to track):
-# !README.md
-# !requirements.txt
-
-# ============================================================================
-# Model Files and Checkpoints (Usually too large for version control)
-# ============================================================================
-*.pth
-*.pt
-*.pkl
-*.joblib
-*.h5
-*.hdf5
-*.onnx
-checkpoint.pth
-*.weights
-models/
-saved_models/
-**/*.pth
-**/*.pt
-
-# ============================================================================
-# Logs and Databases
-# ============================================================================
-*.log
-*.sql
-*.db
-*.sqlite
-*.sqlite3
-
-# ============================================================================
-# Temporary Files
-# ============================================================================
-*.tmp
-*.bak
-*.swp
-*~
-.cache/
-*.cache
-*.sqlite
-*.db
-
-# OS
 .DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 ehthumbs.db
 
+# ============================================================================
+# Data Directories and Files
+# ============================================================================
+**/data/
+
+# Tabular data
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.arrow
+
+# Binary/compressed data
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Audio / video outputs
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mov
+
+# ============================================================================
+# Model Files and Checkpoints
+# ============================================================================
+models/
+saved_models/
+**/models/
+**/saved_models/
+checkpoints/
+**/checkpoints/
+
+# PyTorch
+*.pth
+*.pt
+**/*.pth
+**/*.pt
+
+# Scikit-learn / general
+*.pkl
+*.pickle
+*.joblib
+
+# Keras / TensorFlow
+*.h5
+*.hdf5
+*.keras
+*.pb
+saved_model/
+
+# HuggingFace / ONNX
+*.bin
+*.safetensors
+*.onnx
+*.gguf
+*.ggml
+
+# ============================================================================
+# Logs and Databases
+# ============================================================================
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# TensorBoard
+runs/
+**/runs/
+lightning_logs/
+
+# ============================================================================
+# Temporary / Cache Files
+# ============================================================================
+*.tmp
+*.bak
+.cache/
+*.cache
+__MACOSX/
+
+# ============================================================================
 # Testing
+# ============================================================================
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 
-# mypy
+# ============================================================================
+# Type Checking
+# ============================================================================
 .mypy_cache/
 .dmypy.json
 dmypy.json
